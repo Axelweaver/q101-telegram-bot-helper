@@ -1,0 +1,9 @@
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\bin\Debug\Q101.TelegramBotHelper.dll
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\bin\Debug\Q101.TelegramBotHelper.pdb
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\bin\Debug\Newtonsoft.Json.dll
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\bin\Debug\Newtonsoft.Json.xml
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\obj\Debug\Q101.TelegramBotHelper.csproj.CopyComplete
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\obj\Debug\Q101.TelegramBotHelper.dll
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\obj\Debug\Q101.TelegramBotHelper.pdb
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\bin\Debug\Q101.TelegramBotHelper.xml
+D:\Source\github\Q101.TelegramBotHelper\Q101.TelegramBotHelper\obj\Debug\Q101.TelegramBotHelper.csprojAssemblyReference.cache

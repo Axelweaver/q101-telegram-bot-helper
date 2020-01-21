@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Q101.TelegramBotHelper</name>
+    </assembly>
+    <members>
+        <member name="T:Q101.TelegramBotHelper.Abstract.ITelegramBotHelper">
+            <summary>
+            Telegram bot helper for send message etc
+            </summary>
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Abstract.ITelegramBotHelper.SendMessage(Q101.TelegramBotHelper.Models.SendMessageDtoModel)">
+            <summary>
+            Send message
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Abstract.ITelegramBotHelper.SendSimpleMessage(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            Send simple text message
+            </summary>
+            <param name="chatId">Unique identifier for the target chat or username of the target channel (in the format @channelusername</param>
+            <param name="text">Text of the message to be sent</param>
+            <param name="replyToMessageId">[Optional] If the message is a reply, ID of the original message</param>
+            <param name="disableNotification">[Optional] Sends the message silently. Users will receive a notification with no sound.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Abstract.ITelegramBotHelper.SendMarkupMessage(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            Send text message with markup
+            </summary>
+            <param name="chatId">Unique identifier for the target chat or username of the target channel (in the format @channelusername</param>
+            <param name="text">Text of the message to be sent</param>
+            <param name="replyToMessageId">[Optional] If the message is a reply, ID of the original message</param>
+            <param name="disableNotification">[Optional] Sends the message silently. Users will receive a notification with no sound.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Abstract.ITelegramBotHelper.SendHtmlMessage(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            Send text message with html
+            </summary>
+            <param name="chatId">Unique identifier for the target chat or username of the target channel (in the format @channelusername</param>
+            <param name="text">Text of the message to be sent</param>
+            <param name="replyToMessageId">[Optional] If the message is a reply, ID of the original message</param>
+            <param name="disableNotification">[Optional] Sends the message silently. Users will receive a notification with no sound.</param>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Concrete.TelegramBotHelper">
+            <summary>
+            Telegram bot helper
+            </summary>
+        </member>
+        <member name="F:Q101.TelegramBotHelper.Concrete.TelegramBotHelper._telegramBotHelperConfig">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Concrete.TelegramBotHelper.#ctor(Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig)">
+            <summary>
+            ctor
+            </summary>
+            <param name="telegramBotHelperConfig"></param>
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Concrete.TelegramBotHelper.SendHtmlMessage(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Concrete.TelegramBotHelper.SendMarkupMessage(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Concrete.TelegramBotHelper.SendMessage(Q101.TelegramBotHelper.Models.SendMessageDtoModel)">
+            <inheritdoc />
+        </member>
+        <member name="M:Q101.TelegramBotHelper.Concrete.TelegramBotHelper.SendSimpleMessage(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig">
+            <summary>
+            Configure bot helper
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig.Token">
+            <summary>
+            The token looks something like 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig.BaseUrl">
+            <summary>
+            Optional base url (Default https://api.telegram.org/bot )
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig.HttpProxyHost">
+            <summary>
+            Optional proxy host
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig.HttpProxyPort">
+            <summary>
+            Optional proxy
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig.HttpProxyUserName">
+            <summary>
+            Optional login
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Abstract.ITelegramBotHelperConfig.HttpProxyUserPassword">
+            <summary>
+            Optional password
+            </summary>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig">
+            <summary>
+            Configure bot helper
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig.Token">
+            <summary>
+            The token looks something like 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig.BaseUrl">
+            <summary>
+            Optional base url (Default https://api.telegram.org/bot )
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig.HttpProxyHost">
+            <summary>
+            Optional proxy host
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig.HttpProxyPort">
+            <summary>
+            Optional proxy
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig.HttpProxyUserName">
+            <summary>
+            Optional login
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Config.Concrete.TelegramBotHelperConfig.HttpProxyUserPassword">
+            <summary>
+            Optional password
+            </summary>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Models.ApiResponseDtoModel`1">
+            <summary>
+            DTO of API response
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.ApiResponseDtoModel`1.IsSuccess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.ApiResponseDtoModel`1.Result">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Models.ChatDtoModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.ChatDtoModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.ChatDtoModel.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.ChatDtoModel.UserName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.ChatDtoModel.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Models.MessageDtoModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageDtoModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageDtoModel.Chat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageDtoModel.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageDtoModel.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageDtoModel.Entities">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Models.MessageEntityDtoModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageEntityDtoModel.Offset">
+            <summary>
+            Offset
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageEntityDtoModel.Length">
+            <summary>
+            Length
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageEntityDtoModel.Type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.MessageEntityDtoModel.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="T:Q101.TelegramBotHelper.Models.SendMessageDtoModel">
+            <summary>
+            Model for send message
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.ChatId">
+            <summary>
+            Unique identifier for the target chat or username
+            of the target channel (in the format @channelusername
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.Message">
+            <summary>
+            Text of the message to be sent
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.ParseMode">
+            <summary>
+            Send Markdown or HTML, if you want Telegram apps to show bold, italic,
+            fixed-width text or inline URLs in your bot's message.
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.DisableWebPagePreview">
+            <summary>
+            [Optional] Disables link previews for links in this message
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.DisableNotification">
+            <summary>
+            [Optional] Sends the message silently. Users will receive a notification with no sound.
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.ReplyToMessageId">
+            <summary>
+            [Optional] If the message is a reply, ID of the original message
+            </summary>
+        </member>
+        <member name="P:Q101.TelegramBotHelper.Models.SendMessageDtoModel.ReplyMarkup">
+            <summary>
+            [Optional] Additional interface options.
+            A JSON-serialized object for an inline keyboard, custom reply keyboard,
+            instructions to remove reply keyboard or to force a reply from the user.
+            </summary>
+        </member>
+    </members>
+</doc>
